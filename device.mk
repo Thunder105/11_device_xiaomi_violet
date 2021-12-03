@@ -148,7 +148,6 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     libgui_vendor \
     libxml2 \
-    GCamGOPrebuilt \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 PRODUCT_COPY_FILES += \
@@ -336,6 +335,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
+# Prebuilt Packages
+
+PRODUCT_PACKAGES += \ 
+       GcamGo
 
 # QTI
 PRODUCT_COPY_FILES += \
