@@ -7,11 +7,16 @@
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common KomodoOS stuff.
+# Inherit some common aosp stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 IS_PHONE := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
+
+# Pixel Extended
+PEX_BUILD_TYPE := OFFICIAL
+PEX_MAINTAINER := Hariprakash
+org.pex.build_maintainer := Hariprakash
 
 # Inherit ANX Camera
 #$(call inherit-product, vendor/ANXCamera/config.mk)
