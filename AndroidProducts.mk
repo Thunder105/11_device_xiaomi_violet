@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/komodo_violet.mk
+    $(LOCAL_DIR)/aosp_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    komodo_violet-userdebug \
-    komodo_violet-user \
-	komodo_violet-eng
+    aosp_violet-userdebug \
+    aosp_violet-user \
+	aosp_violet-eng

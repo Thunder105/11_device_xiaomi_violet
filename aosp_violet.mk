@@ -7,21 +7,17 @@
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-#komodo
-KOMODO_OFFICIAL := true
-KOMODO_BUILD_TYPE := OFFICIAL
-
 # Inherit some common KomodoOS stuff.
-$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 IS_PHONE := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Inherit ANX Camera
-$(call inherit-product, vendor/ANXCamera/config.mk)
+#$(call inherit-product, vendor/ANXCamera/config.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := komodo_violet
+PRODUCT_NAME := aosp_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
